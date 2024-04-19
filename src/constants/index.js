@@ -3,12 +3,17 @@ import {
   backend,
   creator,
   web,
+  aws,
+  python,
+  java,
+  nextjs,
+  terraform,
+  kubernetes,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
@@ -19,10 +24,13 @@ import {
   starbucks,
   tesla,
   shopify,
+  l3,
   carrent,
   jobit,
   tripguide,
   threejs,
+  sd,
+  trendify
 } from "../assets";
 
 export const navLinks = [
@@ -42,47 +50,47 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Software Engineer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Full Stack Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Data Analyst",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "python",
+    icon: python,
+  },
+  {
+    name: "java",
+    icon: java,
+  },
+  {
+    name: "HTML",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "CSS ",
     icon: css,
   },
   {
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -93,78 +101,54 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Next JS",
+    icon: nextjs,
   },
+  // {
+  //   name: "MongoDB",
+  //   icon: mongodb,
+  // },
   {
     name: "Three JS",
     icon: threejs,
   },
+  // {
+  //   name: "git",
+  //   icon: git,
+  // },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
   {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
+    name: "AWS",
+    icon: aws,
   },
   {
     name: "docker",
     icon: docker,
   },
+  // {
+  //   name: "Terraform",
+  //   icon: terraform,
+  // },
+  {
+    name: "Kubernetes",
+    icon: kubernetes,
+  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Engineer Intern",
+    company_name: "L3Harris",
+    icon: l3,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "May 2023 - August 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Collaboratively engaged in the design of an UI using JavaScript, React, Python and REST APIs to Improved data analysis and user interaction",
+      "Implemented serverless architecture on AWS (Lambda, Elastic Container Service) using Docker and Terraform for resource deployment and management, enhancing scalability and minimizing infrastructure overhead.",
+      "Developed a GUI testing tool to optimize software evaluation offering parallel execution and cross-platform testing.",
     ],
   },
 ];
@@ -198,45 +182,45 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Photovoltaic Performance Analysis",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "react",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Dash",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Folium",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: sd,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Trendify",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Node.JS",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "MongoDB",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: trendify,
     source_code_link: "https://github.com/",
   },
   {

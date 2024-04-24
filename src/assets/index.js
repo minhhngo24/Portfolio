@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import minh from "./minh.svg";
 
 import backend from "./backend.png";
@@ -28,24 +27,19 @@ import terraform from "./tech/terraform.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+
 import l3 from "./company/l3.png";
-
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 
 import sd from "./sd.png";
 import trendify from "./trendify.png";
+import pc from "./pc.png";
+
+import resume from "./resume.pdf";
+
 
 
 export {
   minh,
-  logo,
   backend,
   creator,
   mobile,
@@ -71,14 +65,9 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   l3,
-  carrent,
-  jobit,
-  tripguide,
   sd,
-  trendify
+  trendify,
+  pc,
+  resume
 };

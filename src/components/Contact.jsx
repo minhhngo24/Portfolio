@@ -7,6 +7,12 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -31,23 +37,27 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    //template_cul8ome
+    //service_uddwk5f 
+    //eD3yDUzSqXZKk3ZQB
+
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_uddwk5f',
+        'template_cul8ome',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Minh Ngo",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "minhngotien.1999@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'eD3yDUzSqXZKk3ZQB'
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert("Thank you for reaching out. I'm looking forward to connecting with you .");
 
           setForm({
             name: "",
@@ -59,7 +69,7 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert("Something went wrong. Please try again.");
         }
       );
   };
@@ -73,7 +83,24 @@ const Contact = () => {
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <h3 className={styles.sectionHeadText}>Contact:</h3>
+        <motion.p
+          variants={slideIn("", "", 0.1, 1)}
+          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        >
+          I'm currently looking for new opportunities, please don't hestitate to connect with me 
+        </motion.p>
+        <div className="flex items-center gap-x-5 text-lg">
+            
+              <a href="https://www.linkedin.com/in/minhtngo24/" class="fa fa-linkedin fa-2x">
+                <FontAwesomeIcon icon = {faLinkedin} />
+              </a>
+                 
+            
+            <a href="https://github.com/minhngo99" class="fa fa-github fa-2x">
+              <FontAwesomeIcon icon = {faGithub} />
+            </a>
+        </div>
 
         <form
           ref={formRef}
@@ -87,7 +114,7 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="What's your name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -98,7 +125,7 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="abc.def@example.com"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -109,7 +136,7 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='What you want to say?'
+              placeholder='Message me'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -118,7 +145,7 @@ const Contact = () => {
             type='submit'
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
-            {loading ? "Sending..." : "Send"}
+            {loading ? "Submitting..." : "Submit"}
           </button>
         </form>
       </motion.div>

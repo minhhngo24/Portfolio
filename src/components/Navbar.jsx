@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
+import { connectLinks } from "../constants";
 import { minh, menu, close } from "../assets";
+
+
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -48,7 +51,7 @@ const Navbar = () => {
             <span className='sm:block hidden'> | Software Engineer</span>
           </p>
         </Link>
-
+        
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
@@ -60,6 +63,22 @@ const Navbar = () => {
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
+          ))}
+          
+          {connectLinks.map((nav) => (
+            <button
+              key={nav.id}
+              className={`${
+                active === nav.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive(nav.title)}
+              style={{
+                border: "100",
+                backgroundColor: "transparent"
+              }}
+            >
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            </button>
           ))}
         </ul>
 

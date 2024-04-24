@@ -20,17 +20,11 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   l3,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   sd,
-  trendify
+  trendify,
+  pc
 } from "../assets";
 
 export const navLinks = [
@@ -42,9 +36,15 @@ export const navLinks = [
     id: "work",
     title: "Work",
   },
+  // {
+  //   id: "contact",
+  //   title: "Let's connect",
+  // },
+
+];export const connectLinks = [
   {
     id: "contact",
-    title: "Contact",
+    title: "Let's connect",
   },
 ];
 
@@ -153,38 +153,11 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
-const projects = [
+const projects1 = [
   {
     name: "Photovoltaic Performance Analysis",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "The local dashboard for solar school performance analysis is designed to allow clients to comprehensively evaluate their time series data on-site, with an integrates interactive maps to enhance user engagement. The project was moved to a private Bitbucket repository with restricted external access. Consequently, following the release of our final product by my team, we are now unable to gain entry to the project.",
     tags: [
       {
         name: "Python",
@@ -200,12 +173,15 @@ const projects = [
       },
     ],
     image: sd,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com"
   },
+]
+
+const projects = [
   {
     name: "Trendify",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "The full-stack application for accessing in-depth insights into a user's Spotify listening history offers users to display their most, played artists and songs.",
     tags: [
       {
         name: "React",
@@ -221,29 +197,29 @@ const projects = [
       },
     ],
     image: trendify,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/cirillojon/Trendify-App",
   },
   {
-    name: "Trip Guide",
+    name: "Professor Contacts",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A website that allows users to log in, sign up, and perform standard CRUD operations, along with a search feature that retrieves contacts from the database and presents them in a table for efficient data management.",
     tags: [
       {
-        name: "nextjs",
+        name: "NodeJs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "React",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "MongoDB",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: pc,
+    source_code_link: "https://github.com/cirillojon/Professor-Contacts",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects, projects1 };
